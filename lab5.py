@@ -33,3 +33,33 @@ class PhoneStore:
         sorted_phones = sorted(PhoneStore.inventory, key=lambda p: p.price)
         for phone in sorted_phones:
             print(f"Smartphone {phone}")
+
+if __name__ == "__main__":
+    phone_1 = Smartphone(400, "Iphone11", "099-222-46-93", 64, "2900mph")
+    phone_2 = Smartphone(600, "Iphone12", "099-333-46-93", 128, "3900mph")
+    phone_3 = Smartphone(550, "Iphone13", "099-444-46-93", 256, "2500mph")
+    phone_4 = Smartphone(700, "Iphone14", "099-555-46-93", 512, "4000mph")
+
+    PhoneStore.add_phone(phone_1)
+    PhoneStore.add_phone(phone_2)
+    PhoneStore.add_phone(phone_3)
+    PhoneStore.add_phone(phone_4)
+
+    phone_numbers = PhoneStore.get_phone_numbers()
+    print("\nList of phone numbers:")
+    print(phone_numbers)
+
+    print("\nList of phones sorted by price:")
+    PhoneStore.list_phones_sorted_by_price()
+
+    max_budget = 650
+
+    best_phone = PhoneStore.find_best_phone(max_budget)
+
+    if best_phone:
+        print()
+        print(f"The best phone within a budget of ${max_budget} is:")
+        print(best_phone)
+    else:
+        print(f"No phones are available within a budget of ${max_budget}")
+
