@@ -2,4 +2,4 @@
 testing-repo
 
 description 
-Створити клас Smartphone, який містить поля для опису телефону, як мінімум - ціна, модель, масив (або пара) мобільних номерів, обсяг пам’яті, ємність батареї і тд. Створити клас PhoneStore, який має асортимент(масив чи колекцію) різних телефонів. Реалізуйте метод вибору найкращого телефону із заданим максимальним бюджетом та виведення списку телефонів, сортованого за ціною
+Create a class Smartphone that includes fields to describe the phone, at least - price, model, array (or pair) of mobile numbers, memory capacity, battery capacity, etc. Create a class PhoneStore that has an assortment (array or collection) of different phones. Implement a method to select the best phone within a given maximum budget and output a list of phones, sorted by price.
